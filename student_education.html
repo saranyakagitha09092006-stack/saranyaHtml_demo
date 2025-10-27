@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #FFD580, #FF8C42); /* full page gradient */
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Floating decorations */
+    .decor {
+      position: absolute;
+      width: 80px;
+      opacity: 0.8;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .pencil { top: 20px; left: 30px; animation-delay: 0s; }
+    .book   { bottom: 60px; right: 40px; animation-delay: 2s; }
+    .bag    { top: 100px; right: 150px; animation-delay: 4s; }
+    .calendar { top: 50px; right: 40px; width: 70px; animation-delay: 1s; }
+    .computer { bottom: 40px; left: 40px; width: 90px; animation-delay: 3s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Login box */
+    .login-box {
+      background: rgba(255, 255, 255, 0.25);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+      text-align: center;
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    .login-box h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+    }
+
+    .login-box input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #ff6600;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #e65c00;
+    }
+
+    /* Social buttons */
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      background: rgba(0,0,0,0.3);
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background: rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating decorations -->
+  <img src="https://cdn-icons-png.flaticon.com/512/201/201818.png" class="decor pencil">
+  <img src="https://cdn-icons-png.flaticon.com/512/2972/2972029.png" class="decor book">
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135745.png" class="decor bag">
+  <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" class="decor calendar">
+  <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" class="decor computer">
+
+  <!-- Login box -->
+  <div class="login-box">
+    <h1>Web Page</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Enter</button>
+
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+
+</body>
+</html>
